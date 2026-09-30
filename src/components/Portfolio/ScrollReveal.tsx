@@ -40,6 +40,7 @@ export default function ScrollReveal({ children }: { children: ReactNode }) {
       target.dataset.revealState = "pending";
       observer.observe(target);
     });
+    scope.dataset.motionReady = "true";
 
     return () => observer.disconnect();
   }, []);

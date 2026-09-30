@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="320" viewBox="0 0 240 320">
+  <defs>
+    <pattern id="rules" width="240" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 23.5h240" stroke="#d9c4d4" stroke-opacity=".6" stroke-width="1"/>
+    </pattern>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values=".25 0 0 0 .7 .25 0 0 0 .66 .25 0 0 0 .7 0 0 0 .11 0"/>
+    </filter>
+  </defs>
+  <rect width="240" height="320" fill="#f7f1f5"/>
+  <rect width="240" height="320" fill="url(#rules)"/>
+  <path d="M43 0v320" stroke="#ff7ad9" stroke-opacity=".42"/>
+  <rect width="240" height="320" filter="url(#grain)" opacity=".16"/>
+  <path d="M120 45v42m-22-21h44m-37-15 30 30m0-30-30 30" stroke="#9f4c91" stroke-opacity=".8" stroke-width="1.4"/>
+  <circle cx="120" cy="66" r="26" fill="none" stroke="#ff38ca" stroke-opacity=".62"/>
+  <text x="58" y="126" fill="#38263a" font-family="Georgia,serif" font-size="22" letter-spacing="2">M. ABRAMS</text>
+  <text x="58" y="151" fill="#72466d" font-family="monospace" font-size="8" letter-spacing="1.7">CONTACT / 01</text>
+  <path d="M58 177h138M58 201h126M58 225h138M58 249h98" stroke="#a98da4" stroke-opacity=".6"/>
+  <text x="58" y="271" fill="#38263a" font-family="monospace" font-size="7.2">whyphy.abrams@gmail.com</text>
+  <text x="58" y="292" fill="#a3348d" font-family="monospace" font-size="7.2" letter-spacing=".8">COLORADO SPRINGS, CO</text>
+</svg>

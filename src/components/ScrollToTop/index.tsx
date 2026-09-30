@@ -29,7 +29,7 @@ export default function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className='bg-purple fixed right-8 bottom-8 size-10 place-items-center rounded-sm text-white shadow-md transition-opacity duration-300 hover:opacity-70'
+      className='fixed right-8 bottom-8 size-10 place-items-center rounded-sm bg-[#ff38ca] text-[#0c0c0d] shadow-md transition-opacity duration-300 hover:opacity-80'
       style={{
         display: isVisible ? 'grid' : 'none',
       }}
@@ -37,7 +37,7 @@ export default function ScrollToTop() {
       <span className='sr-only'>Scroll to top</span>
 
       <svg
-        className='size-5 fill-white'
+        className='size-5 fill-[#0c0c0d]'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 512 512'
       >

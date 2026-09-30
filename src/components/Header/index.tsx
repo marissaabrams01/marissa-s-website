@@ -5,7 +5,7 @@ import { useState } from "react";
 const navigation = [
   { label: "About", href: "/#about" },
   { label: "Experience", href: "/#experience" },
-  { label: "Learning", href: "/#learning" },
+  { label: "Skills", href: "/#learning" },
 ];
 
 const Header = () => {
