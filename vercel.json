@@ -1,0 +1,69 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "app": {
+      "root": ".",
+      "framework": "nextjs"
+    },
+    "grimoire": {
+      "root": "grimoire",
+      "framework": "vite"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/grimoire",
+      "destination": {
+        "service": "grimoire",
+        "path": "/"
+      }
+    },
+    {
+      "source": "/grimoire/:path*",
+      "destination": {
+        "service": "grimoire",
+        "path": "/:path*"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "app"
+      }
+    }
+  ]
+}{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "app": {
+      "root": ".",
+      "framework": "nextjs"
+    },
+    "grimoire": {
+      "root": "grimoire",
+      "framework": "vite"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/grimoire",
+      "destination": {
+        "service": "grimoire",
+        "path": "/"
+      }
+    },
+    {
+      "source": "/grimoire/:path*",
+      "destination": {
+        "service": "grimoire",
+        "path": "/:path*"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "app"
+      }
+    }
+  ]
+}
